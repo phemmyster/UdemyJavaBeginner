@@ -24,10 +24,11 @@ public class convert {
 				
 		// convert string to integer
 		int NewRate = Integer.parseInt(rate);
-		
-		System.out.println("New age 1 is "+NewRate);
 		int NewRate2 = Integer.valueOf(rate);
-		System.out.println("New age 2 is "+NewRate2);
+		int NewRate3= (int) salary;
+		System.out.println("New rate 1 is "+NewRate);
+		System.out.println("New rate 2 is "+NewRate2);
+		System.out.println("New salary is "+NewRate3);
 		
 		//convert to double
 		
