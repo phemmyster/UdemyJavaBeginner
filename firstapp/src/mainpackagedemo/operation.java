@@ -17,10 +17,11 @@ public class operation {
 		int sum = n1 * n2 / n3;
 		int sum1 = n1 + n2 * n3;
 		int sum2 = n1 * n2 + n3;
+		int sum3 = n1 - n2 * n3+4;
 		System.out.println("Sum: " + sum);
 		System.out.println("Sum 1: " + sum1);
 		System.out.println("Sum 2: " + sum2);
-
+		System.out.println("Sum 3: " + sum3);
 	}
 
 }
