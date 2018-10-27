@@ -8,15 +8,15 @@ public class Inputs {
 
 	public static void main(String[] args) {
 	
-		System.out.println("Enter your full name:");
+		System.out.print("Enter your full name:");
 		String name = reader.nextLine();
 		// int age = 34;
-		System.out.println("Enter your age:");
+		System.out.print("Enter your age:");
 		int age = reader.nextInt();
 		// double Salary = 1200000.50;
-		System.out.println("Enter your salary:");
+		System.out.print("Enter your salary:");
 		double Salary = reader.nextDouble();
-		System.out.println("Enter your Gender:");
+		System.out.print("Enter your Gender:");
 		String input = reader1.nextLine();
 		char Gender = input.charAt(0);
 		
