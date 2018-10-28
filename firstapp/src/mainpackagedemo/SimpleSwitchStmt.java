@@ -12,13 +12,16 @@ public class SimpleSwitchStmt {
 		int index = reader.nextInt();
 		
 		switch (index) {
-		case 1: System.out.println("You are a male");
-			break;
-		case 2: System.out.println("You are a female");	
-			break;
+		case 1: 
+			System.out.println("You are a male");
+		break;
+		case 2:
+			System.out.println("You are a female");	
+		break;
 
-		default:System.out.println("Please select 1 or 2");
-			break;
+		default:
+			System.out.println("Please select 1 or 2");
+		break;
 		}
 
 	}
