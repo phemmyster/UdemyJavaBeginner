@@ -10,6 +10,8 @@ public class SimpleIF {
 		System.out.print("Enter grade: ");
 		int grade = reader.nextInt();
 		
+		// use more than one condition
+		// (grade>= 50) && (grade <= 60)
 		if (grade >= 90) {
 			System.out.println("Grade is A!");
 			
