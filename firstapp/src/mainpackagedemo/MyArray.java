@@ -7,7 +7,7 @@ public class MyArray {
 		String[] jobs = new String[5];
 		jobs[0] = "Tester";
 		jobs[1] = "QA";
-		jobs[2] = "Programmer";
+		jobs[2] = "Coder";
 		jobs[3] = "Manager";
 		jobs[4] = "Admin";
 		//String[] jobs = {};
