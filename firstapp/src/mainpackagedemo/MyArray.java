@@ -12,7 +12,8 @@ public class MyArray {
 		jobs[4] = "Admin";
 		//String[] jobs = {};
 		
-		for (int i= 0; i<jobs.length; i++) {
+		//for (int i= 0; i<jobs.length; i++) {
+		for (int i= 0; i<5; i++) {
 			System.out.println("Jobs available are: "+jobs[i]);
 		}
 
