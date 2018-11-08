@@ -23,12 +23,13 @@ public class SimpleFunction {
 	public static void main(String[] args) {
 	//SimpleFunction.
 		new SimpleFunction().Draw();
-		//new SimpleFunction().Draw();
+		new SimpleFunction().Draw();
 		//Draw();
 		//Draw();
 		
-		// for sum funxtion
+		// for sum function
 		float r = new SimpleFunction().sum(98.546f, 347.989f);
+		System.out.println("Sum is: "+r);
 		
 
 	}
