@@ -11,7 +11,10 @@ public class CarMain {
 		car1.Owner = "Phemmy";
 		car1.Price = 10000;
 		
-		System.out.println(car1.GetPrice());
+		System.out.println("Car price is given as:"+car1.GetPrice());
+		
+		Car car2 = new Car();
+		System.out.println("Car price is given as:"+car2.GetPrice());
 		
 
 	}
