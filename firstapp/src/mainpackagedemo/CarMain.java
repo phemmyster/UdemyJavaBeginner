@@ -11,7 +11,7 @@ public class CarMain {
 		car1.Model = 2016;
 		//car1.Owner = "Phemmy";
 		car1.Price = 10000;
-		
+		System.out.println("Owner of car1 is: "+ car1.Owner);
 		System.out.println("Car1 price is given as:"+car1.GetPrice());
 		
 		//Car car2 = new Car();
@@ -19,6 +19,7 @@ public class CarMain {
 		
 		//Car car3 = new Car("Honda",2019,100000,10,"Niffy");
 		Car car3 = new Car("Honda",2019,100000,10);
+		System.out.println("Owner of car3 is: "+ car3.Owner);
 		System.out.println("Car3 price is given as:"+car3.GetPrice());
 
 	}
