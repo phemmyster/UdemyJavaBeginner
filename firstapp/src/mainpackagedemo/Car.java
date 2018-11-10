@@ -14,6 +14,7 @@ public class Car {
 	
 	static String Owner; // is common to all
 	
+	
 	//default constructor
 	public Car(){
 		System.out.println("Default constructor 4 Car!");
