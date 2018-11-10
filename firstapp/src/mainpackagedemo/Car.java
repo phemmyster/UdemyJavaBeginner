@@ -2,10 +2,16 @@ package mainpackagedemo;
 
 public class Car {
 // CarMain is the tester for this class
-	String Type;
-	int Model;
-	double Price;
-	double MilesDrive;
+	//private String Type;
+	public String Type;
+	//private int Model;
+	public int Model;
+	//private double Price;
+	public double Price;
+	//private double MilesDrive;
+	public double MilesDrive;
+	
+	
 	static String Owner; // is common to all
 	
 	//default constructor
