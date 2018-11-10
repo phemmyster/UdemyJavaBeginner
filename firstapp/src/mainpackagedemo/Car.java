@@ -6,14 +6,14 @@ public class Car {
 	int Model;
 	double Price;
 	double MilesDrive;
-	String Owner;
+	static String Owner; // is common to all
 	
 	//default constructor
 	public Car(){
 		System.out.println("Default constructor!");
 	}
 	
-	public Car(String Type,int Model,double Price,double MilesDrive,String Owner){
+	public Car(String Type,int Model,double Price,double MilesDrive){
 		this.Type= Type;
 		this.Model = Model;
 		this.Price= Price;
