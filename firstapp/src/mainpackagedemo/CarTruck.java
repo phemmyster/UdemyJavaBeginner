@@ -5,9 +5,16 @@ public class CarTruck extends Car{
 	// using the keyword extends
 	
 	
-	boolean HasTruck;
+	private boolean HasTruck;
+	public void setHasTruck(boolean HasTruck){
+		this.HasTruck = HasTruck;
+	}
 	
-	
-	
+	public CarTruck(){
+		System.out.println("Default constructor 4 carTruck!");
+	}
+	void GetOwner(){
+		System.out.println("Owner is:"+Owner);
+	}
 
 }

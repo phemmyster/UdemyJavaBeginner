@@ -10,7 +10,7 @@ public class Car {
 	
 	//default constructor
 	public Car(){
-		System.out.println("Default constructor!");
+		System.out.println("Default constructor 4 Car!");
 	}
 	
 	public Car(String Type,int Model,double Price,double MilesDrive){
