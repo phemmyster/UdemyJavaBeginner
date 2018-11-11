@@ -26,7 +26,9 @@ public class Car {
 		this.MilesDrive = MilesDrive;
 		this.Owner = Owner;
 		 owners = new Owners();
-		 owners.
+		 owners.FirstName = "Phemmy";
+		 owners.LastName="Akinz";
+		 
 		System.out.println("constructor 2 is created!");
 	}
 
