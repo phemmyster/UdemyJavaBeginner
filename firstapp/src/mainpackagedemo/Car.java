@@ -10,9 +10,8 @@ public class Car {
 	public double Price;
 	//private double MilesDrive;
 	public double MilesDrive;
-	
-	
 	static String Owner; // is common to all
+	Owners owners;
 	
 	
 	//default constructor
@@ -26,6 +25,8 @@ public class Car {
 		this.Price= Price;
 		this.MilesDrive = MilesDrive;
 		this.Owner = Owner;
+		 owners = new Owners();
+		 owners.
 		System.out.println("constructor 2 is created!");
 	}
 
