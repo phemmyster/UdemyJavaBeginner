@@ -11,7 +11,9 @@ public class CarTruck extends Car{
 	}
 	
 	public CarTruck(){
-		super(); //constructor from car class
+		
+		super("Honda",2019,100000,10); //constructor from car class
+		System.out.println("constructor 4m parent class!");
 		System.out.println("Default constructor 4 carTruck!");
 	}
 	void GetOwner(){
