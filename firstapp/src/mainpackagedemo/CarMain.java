@@ -5,7 +5,7 @@ public class CarMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Car.Owner ="Phemmy";
-		//cant create an instance bcuz of the abstract in car class
+		//cant create an instance bcuz of the ABSTRACT in car class
 		Car car1 = new Car(); // this wnt work again cuz of default constructor
 		car1.Type ="BWM";
 		car1.MilesDrive = 5;

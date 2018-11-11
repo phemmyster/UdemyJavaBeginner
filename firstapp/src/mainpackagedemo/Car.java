@@ -1,6 +1,7 @@
 package mainpackagedemo;
 
-abstract public class Car {
+//abstract public class Car {
+    public class Car {
 // CarMain is the tester for this class
 	//private String Type;
 	public String Type;
