@@ -8,6 +8,10 @@ public class Car {
 	double MilesDrive;
 	String Owner;
 	
+	public Car(){   // constructor
+		System.out.println("class created in constructor!");
+	}
+	
 	double GetPrice(){
 		double NewPrice = Price - (MilesDrive* 100);
 		return NewPrice;

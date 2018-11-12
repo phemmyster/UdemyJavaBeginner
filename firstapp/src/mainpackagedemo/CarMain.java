@@ -14,7 +14,8 @@ public class CarMain {
 		System.out.println("Car price is given as:"+car1.GetPrice());
 		
 		Car car2 = new Car();
-		System.out.println("Car price is given as:"+car2.GetPrice());
+		double price = car2.GetPrice();
+		System.out.println("Car price is given as:"+price);
 		
 
 	}
