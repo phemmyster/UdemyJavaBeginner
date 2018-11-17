@@ -3,16 +3,32 @@ package mainpackagedemo;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
-public class ReadFile {
-
+public class FileRder_WithInput {
+static Scanner reader = new Scanner(System.in);
+static Scanner reader1 = new Scanner(System.in);
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		FileWriterOn("This is nerdster coding on the wheel of java!");
-		FileReaderOn();
+		System.out.println("1 - To write to file\n2- Read from file");
+		int op = reader1.nextInt();
 		
-	}
+		switch (op) {
+		case 1: // write
+			System.out.println("Enter to save to file");
+			String msg = reader.nextLine();
+			FileWriterOn(msg);
+			break;
+		case 2:// read
+			FileReaderOn();
+			break;
 
+//		default:
+//			break;
+		}
+		// TODO Auto-generated method stub
+
+	}
+	
 	static void FileReaderOn(){
 		try {
 			FileReader fd = new FileReader("text2.txt");
@@ -39,3 +55,6 @@ public class ReadFile {
 	}
 
 }
+
+
+
