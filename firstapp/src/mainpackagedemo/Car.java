@@ -1,7 +1,12 @@
 package mainpackagedemo;
 
+<<<<<<< HEAD
 //abstract public class Car {
     public class Car {
+=======
+//abstract public class Car {  // if u use abstract it wnt be acesseible
+	public class Car {
+>>>>>>> 6b0c21b9c2a60557eb29815bf62345f0ef558076
 // CarMain is the tester for this class
 	//private String Type;
 	public String Type;
@@ -14,11 +19,6 @@ package mainpackagedemo;
 	static String Owner; // is common to all
 	Owners owners;
 	
-	
-	//default constructor
-	public Car(){
-		System.out.println("Default constructor 4 Car!");
-	}
 	
 	public Car(String Type,int Model,double Price,double MilesDrive){
 		this.Type= Type;
@@ -33,6 +33,10 @@ package mainpackagedemo;
 		System.out.println("constructor 2 is created!");
 	}
 
+	
+	public Car(){   // constructor
+		System.out.println("class created in constructor!");
+	}
 	
 	double GetPrice(){
 		double NewPrice = Price - (MilesDrive* 100);
