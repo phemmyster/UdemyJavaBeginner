@@ -1,12 +1,9 @@
 package mainpackagedemo;
 
-<<<<<<< HEAD
-//abstract public class Car {
-    public class Car {
-=======
+
 //abstract public class Car {  // if u use abstract it wnt be acesseible
 	public class Car {
->>>>>>> 6b0c21b9c2a60557eb29815bf62345f0ef558076
+
 // CarMain is the tester for this class
 	//private String Type;
 	public String Type;
