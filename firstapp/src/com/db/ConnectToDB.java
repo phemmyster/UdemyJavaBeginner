@@ -30,7 +30,7 @@ public class ConnectToDB {
 				String SQLAdd = "insert into admins(user_name,password) values('"+user_name+"','"+password+"')";
 				Statement stmt = c.createStatement();
 				stmt.executeUpdate(SQLAdd);
-				System.out.println("Added to db");
+				System.out.println("Record added Successfully!");
 				
 				break;
 
