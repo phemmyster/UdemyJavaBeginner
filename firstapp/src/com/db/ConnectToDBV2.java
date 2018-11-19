@@ -1,4 +1,4 @@
-package com.db;
+ package com.db;
 import java.sql.*;
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public static void main(String[] args) {
 			c = DriverManager.getConnection("jdbc:sqlite:info.db");
 			System.out.println("Connection Successful!");
 			// add users
-			System.out.println("Use operation\n1 - Add new user\n2 - Selection\n3- Delete");
+			System.out.println("Use operation\n1 - Add new user\n2 - Selection\n3- Delete\n4 - Update Password");
 			Statement stmt = c.createStatement(); // stmt for all processes
 			Scanner reader = new Scanner(System.in);
 			int processIndex = reader.nextInt();
@@ -71,6 +71,27 @@ public static void main(String[] args) {
 				c.close();
 				System.out.println("Record is deleted");
 				
+				break;
+				
+			case 4: // update password
+				
+				Scanner idInD = new Scanner(System.in);
+				Scanner passwordInD = new Scanner(System.in);
+				
+				System.out.print("Enter ID: ");
+				int id1 = idInD.nextInt();
+				
+				System.out.print("Enter new password: ");
+				String password1 = passwordInD.nextLine();
+				
+			
+				String SQLupdate = "update admins set password='"+password1+"' where id="+id1;
+				
+				stmt.executeUpdate(SQLupdate);
+				c.commit();
+				stmt.close();
+				c.close();
+				System.out.println("Record updated Successfully!");
 				break;
 				
 
