@@ -15,6 +15,8 @@ public class MyCollections {
 
 		// to get the 
 		System.out.println(ar.get(0));
+		// to delete
+		System.out.println(ar.remove(0));
 	}
 
 }
