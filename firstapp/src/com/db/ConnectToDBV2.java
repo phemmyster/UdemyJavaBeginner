@@ -13,7 +13,7 @@ public static void main(String[] args) {
 			c = DriverManager.getConnection("jdbc:sqlite:info.db");
 			System.out.println("Connection Successful!");
 			// add users
-			System.out.println("Use operation\n1 - Add new user\n2 - Selection\n3- Delete");
+			System.out.println("Use operation\n1 - Add new user\n2 - Selection\n3- Delete\n4- Update password");
 			Statement stmt = c.createStatement(); // stmt for all processes
 			Scanner reader = new Scanner(System.in);
 			int processIndex = reader.nextInt();
@@ -74,7 +74,25 @@ public static void main(String[] args) {
 				break;
 				
 
-			default:
+			case 4: // update password
+				Scanner idInD = new Scanner(System.in);
+				Scanner usernameInD = new Scanner(System.in);
+				
+				System.out.print("Enter ID: ");
+				int id1 = idInD.nextInt();
+				
+				System.out.print("Enter new password: ");
+				String password1 = psd.nextLine();
+				
+			//	String SQLAdd = "insert into admins(user_name,password) values('debby','queenBee23')";
+				String SQLAdd = "insert into admins(user_name,password) values('"+user_name+"','"+password+"')";
+				//Statement stmt = c.createStatement();
+				stmt.executeUpdate(SQLAdd);
+				c.commit();
+				stmt.close();
+				c.close();
+				System.out.println("Record added Successfully!");
+				
 				break;
 			}
 			
