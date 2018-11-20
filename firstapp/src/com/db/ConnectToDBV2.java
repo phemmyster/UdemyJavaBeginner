@@ -1,4 +1,4 @@
-package com.db;
+ package com.db;
 import java.sql.*;
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public static void main(String[] args) {
 			c = DriverManager.getConnection("jdbc:sqlite:info.db");
 			System.out.println("Connection Successful!");
 			// add users
-			System.out.println("Use operation\n1 - Add new user\n2 - Selection\n3- Delete\n4- Update password");
+			System.out.println("Use operation\n1 - Add new user\n2 - Selection\n3- Delete\n4 - Update Password");
 			Statement stmt = c.createStatement(); // stmt for all processes
 			Scanner reader = new Scanner(System.in);
 			int processIndex = reader.nextInt();
@@ -73,26 +73,29 @@ public static void main(String[] args) {
 				
 				break;
 				
-
 			case 4: // update password
+				
 				Scanner idInD = new Scanner(System.in);
-				Scanner usernameInD = new Scanner(System.in);
+				Scanner passwordInD = new Scanner(System.in);
 				
 				System.out.print("Enter ID: ");
 				int id1 = idInD.nextInt();
 				
 				System.out.print("Enter new password: ");
-				String password1 = psd.nextLine();
+				String password1 = passwordInD.nextLine();
 				
-			//	String SQLAdd = "insert into admins(user_name,password) values('debby','queenBee23')";
-				String SQLAdd = "insert into admins(user_name,password) values('"+user_name+"','"+password+"')";
-				//Statement stmt = c.createStatement();
-				stmt.executeUpdate(SQLAdd);
+			
+				String SQLupdate = "update admins set password='"+password1+"' where id="+id1;
+				
+				stmt.executeUpdate(SQLupdate);
 				c.commit();
 				stmt.close();
 				c.close();
-				System.out.println("Record added Successfully!");
+				System.out.println("Record updated Successfully!");
+				break;
 				
+
+			default:
 				break;
 			}
 			
